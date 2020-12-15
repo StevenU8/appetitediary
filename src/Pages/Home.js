@@ -1,14 +1,8 @@
-import { Card, Button, Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import RecentPosts from "../Components/RecentPosts";
 
 export default function Home() {
-
-    let recentPosts = [
-
-    ]
-
     return (
-
         <Container>
             <Row>
                 <h3>Recent Posts</h3>
