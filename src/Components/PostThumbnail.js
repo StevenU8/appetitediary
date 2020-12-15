@@ -1,4 +1,5 @@
 import { Card, Button } from "react-bootstrap";
+import Routes from "../Routes"
 
 const PostThumbnail = ({ post }) => (
     <Card>
@@ -9,7 +10,7 @@ const PostThumbnail = ({ post }) => (
             Some quick example text to build on the card title and make up the bulk of
             the card's content.
             </Card.Text>
-            <Button variant="secondary">Go somewhere</Button>
+            <Button href={Routes.Post} variant="secondary">Read...</Button>
         </Card.Body>
     </Card>
 );
