@@ -20,6 +20,8 @@ import Home from "./Pages/Home"
 import Recipes from "./Pages/Recipes";
 import Post from "./Pages/Post";
 
+import SocialMedia from "./Components/SocialMedia";
+
 export default function App() {
   return (
     <HashRouter>
@@ -29,7 +31,9 @@ export default function App() {
           <Col>
             <h1>appetitediary</h1>
           </Col>
-          <Col></Col>
+          <Col className="justify-content-end" style={{display:"flex", alignItems:"center"}}>
+            <SocialMedia/>
+          </Col>
         </Row>
 
         <Row>
