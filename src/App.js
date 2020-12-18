@@ -28,7 +28,7 @@ export default function App() {
       <Container>
         <Row>
           <Col></Col>
-          <Col>
+          <Col style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <h1>appetitediary</h1>
           </Col>
           <Col className="justify-content-end" style={{display:"flex", alignItems:"center"}}>
@@ -37,20 +37,19 @@ export default function App() {
         </Row>
 
         <Row>
-          <Col></Col>
-          <Col>
+          <Col style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Navbar expand="lg">
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                   <Nav.Link href={Routes.Home}>Home</Nav.Link>
                   <Nav.Link href={Routes.Recipes}>Recipes</Nav.Link>
+                  <Nav.Link href={Routes.Gadgets}>Gadgets</Nav.Link>
                   <Nav.Link href={Routes.About}>About Us</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
           </Col>
-          <Col></Col>
         </Row>
       </Container>
 
