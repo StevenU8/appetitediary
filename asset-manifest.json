@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/appetitediary/static/js/main.4ee2b69b.chunk.js",
-    "main.js.map": "/appetitediary/static/js/main.4ee2b69b.chunk.js.map",
+    "main.js": "/appetitediary/static/js/main.ddb8c1de.chunk.js",
+    "main.js.map": "/appetitediary/static/js/main.ddb8c1de.chunk.js.map",
     "runtime-main.js": "/appetitediary/static/js/runtime-main.a9971d10.js",
     "runtime-main.js.map": "/appetitediary/static/js/runtime-main.a9971d10.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/appetitediary/static/css/2.20aa2d7b.chunk.css",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.a9971d10.js",
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.fe20dfb0.chunk.js",
-    "static/js/main.4ee2b69b.chunk.js"
+    "static/js/main.ddb8c1de.chunk.js"
   ]
 }
