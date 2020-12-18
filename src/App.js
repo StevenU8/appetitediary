@@ -50,8 +50,6 @@ export default function App() {
         </Row>
       </Container>
 
-
-
       <Switch>
         <Route path="/about">
           <About />
