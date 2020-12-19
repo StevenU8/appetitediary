@@ -21,6 +21,7 @@ import Recipes from "./Pages/Recipes";
 import Post from "./Pages/Post";
 
 import SocialMedia from "./Components/SocialMedia";
+import Gadgets from './Pages/Gadgets';
 
 export default function App() {
   return (
@@ -62,6 +63,9 @@ export default function App() {
         </Route>
         <Route path="/Post">
           <Post />
+        </Route>
+        <Route path="/Gadgets">
+          <Gadgets/>
         </Route>
         <Route path="/">
           <Home />
