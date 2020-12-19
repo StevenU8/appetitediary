@@ -3,5 +3,8 @@ export default {
         Recipes: "/recipes",
         Gadgets: "/gadgets",
         About: "/about",
-        Post: "/post"
+        Post: "/post",
+        Posts: {
+                InstantPotCarnitas: "instant-pot-carnitas"
+        }
 }
