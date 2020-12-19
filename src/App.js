@@ -43,10 +43,10 @@ export default function App() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Nav.Link href={Routes.Home}>Home</Nav.Link>
-                  <Nav.Link href={Routes.Recipes}>Recipes</Nav.Link>
-                  <Nav.Link href={Routes.Gadgets}>Gadgets</Nav.Link>
-                  <Nav.Link href={Routes.About}>About Us</Nav.Link>
+                  <Nav.Link href={`#${Routes.Home}`}>Home</Nav.Link>
+                  <Nav.Link href={`#${Routes.Recipes}`}>Recipes</Nav.Link>
+                  <Nav.Link href={`#${Routes.Gadgets}`}>Gadgets</Nav.Link>
+                  <Nav.Link href={`#${Routes.About}`}>About Us</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
@@ -55,21 +55,11 @@ export default function App() {
       </Container>
 
       <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/recipes">
-          <Recipes />
-        </Route>
-        <Route path="/Post">
-          <Post />
-        </Route>
-        <Route path="/Gadgets">
-          <Gadgets/>
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        <Route path={Routes.About} component={About}/>
+        <Route path={Routes.Recipes} component={Recipes}/>
+        <Route path={Routes.Post} component={Post}/>
+        <Route path={Routes.Gadgets} component={Gadgets}/>
+        <Route path={Routes.Home} component={Home}/>
       </Switch>
     </HashRouter>
   );
