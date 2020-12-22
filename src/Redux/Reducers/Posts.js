@@ -36,6 +36,6 @@ const posts = [
         }
 ];
 
-export default function(state = posts, action) {
+export default function Posts (state = posts, action) {
       return state;
 }

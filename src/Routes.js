@@ -1,4 +1,4 @@
-export default {
+const Routes = {
         Home: "/",
         Recipes: "/recipes",
         Gadgets: "/gadgets",
@@ -8,3 +8,5 @@ export default {
                 InstantPotCarnitas: "instant-pot-carnitas"
         }
 }
+
+export default Routes;
