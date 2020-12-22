@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
-  HashRouter,
+  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -25,7 +25,7 @@ import Gadgets from './Pages/Gadgets';
 
 export default function App() {
   return (
-    <HashRouter>
+    <Router>
       <Container>
         <Row>
           <Col></Col>
@@ -43,10 +43,10 @@ export default function App() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Nav.Link href={`#${Routes.Home}`}>Home</Nav.Link>
-                  <Nav.Link href={`#${Routes.Recipes}`}>Recipes</Nav.Link>
-                  <Nav.Link href={`#${Routes.Gadgets}`}>Gadgets</Nav.Link>
-                  <Nav.Link href={`#${Routes.About}`}>About Us</Nav.Link>
+                  <Nav.Link href={`${Routes.Home}`}>Home</Nav.Link>
+                  <Nav.Link href={`${Routes.Recipes}`}>Recipes</Nav.Link>
+                  <Nav.Link href={`${Routes.Gadgets}`}>Gadgets</Nav.Link>
+                  <Nav.Link href={`${Routes.About}`}>About Us</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
@@ -61,6 +61,6 @@ export default function App() {
         <Route path={Routes.Gadgets} component={Gadgets}/>
         <Route path={Routes.Home} component={Home}/>
       </Switch>
-    </HashRouter>
+    </Router>
   );
 }
